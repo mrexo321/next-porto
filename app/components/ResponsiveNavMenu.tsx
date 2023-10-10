@@ -8,8 +8,8 @@ interface Inav {
   link: string;
 }
 
-const ResponsiveNavMenu: FC<Inav> = () => {
-  const [open, setOpen] = useState(false);
+const ResponsiveNavMenu: FC = () => {
+  const [open, setOpen] = useState<boolean>(false);
   const showNavMenu = () => {
     setOpen(!open);
   };
